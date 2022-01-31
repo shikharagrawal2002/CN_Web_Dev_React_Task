@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,398 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color:white
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading {
+  font-family: "Sacramento";
+  font-weight: 400
+}
+.header {
+  padding: 5px 50px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header .links {
+  margin-left: auto;
+}
+
+.header a{
+  margin-left: 75px;
+  text-decoration: none;
+  color: white;
+
+}
+
+.header a:hover{
+  font-weight: 600;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+}
+
+.responsiveImage{
+  width: 650px;
+  height: 350px;
+}
+
+.image{
+  margin-top: 175px;
+  margin-left: 100px; 
+}
+
+.text{
+  margin-left: 170px;
+  margin-top: 30px;
+}
+
+.text h1{
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.text h3{
+  margin:0;
+  color: #6C63FF;
+  line-height: 50px;
+  font-weight: 600;
+  font-size:40px;
+}
+
+
+.text p{
+  font-size: 20px;
+}
+.buttons-container{
+  margin-top: 50px;
+  margin-left: 0;
+}
+
+.button-notes , .button-restaurant {
+  padding: 10px 30px;
+  margin: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #7c7c7c;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    padding: 5px;
+    color: #000;
+    font-size: 18px;
+
+}
+
+.button-notes {
+  margin-left: 0;
+}
+
+.buttons-container a:hover{
+  background-color: #6C63FF;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.notesPage .text h1{
+  margin-top: 34px;
+}
+
+.container {
+  margin-top: 50px;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.searchBar {
+  margin-right:5vw;
+  margin-top: 51px;
+  margin-left: 30vw;
+}
+
+span {
+  background: #404040;
+  width: 186px;
+  height: 45px;
+}
+
+hr{
+ transform:rotate(90deg);
+ width: 50px;
+}
+
+.dropdown {
+  color: grey;
+  background: #404040;
+  font-size: 20px;
+  font-weight: 400;
+  border: 0;
+  width: 186px;
+  height: 45px;
+  margin-right: 63px;
+  border-radius: 7px;
+  padding-left: 20px;
+}
+
+.searchDrop{
+  width: 270px;
+}
+
+.displaytext {
+  color:  white;
+}
+
+select option:hover {
+  box-shadow: 0 0 10px 100px blue inset;
+}
+
+.search {
+  width: 131px;
+  height: 44px;
+  background: #6C63FF;
+  border: 0;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 7px;
+}
+
+.card {
+  background: #404040;
+  width: 345px;
+  height: 170px;
+  margin-left: 20px;
+  margin-right: 115px;
+  margin-bottom: 75px;
+  padding-top: 22px;
+  padding-left: 18px;
+  border-radius: 8px;
+}
+
+.card h1{
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card p{
+  font-size: 20px;
+}
+
+.logo {
+  width: 478px;
+  height: 300px;
+  margin-left:17vw;
+}
+
+.body{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 500px){
+  .links {
+    display: flex;
+      flex-direction: column;
+      height: auto;
+  }
+
+
+  .header {
+    padding:0;
+    display: block;
+  }
+
+  .header a{
+    margin-left: auto;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+  
+  }
+
+  .heading{
+    font-size: 20px;
+    padding-left: 25px;
+  }
+
+  .link:nth-child(1){
+      border-top: 1px solid rgba(255, 255, 255, 0.555);
+      margin-top: 50px;
+  }
+  .link {
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.555);
+      text-align: center;
+      margin-right: 0px;
+      padding: 20px 0;
+  }
+  .menu {
+      display: block;
+      margin-right: 0px;
+      background: none;
+      color: white;
+      border:0;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .responsiveImage {
+    width: 300px;
+    height: 200px;
+  }
+
+  .image{
+    margin-top: 7vh;
+    margin-left:10%;
+    margin-right:20%;
+  }
+
+  .text{
+    margin-left: 10%;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .text h1{
+    margin-bottom: 0;
+    font-size: 45px;
+    margin-right: 10%;
+    line-height: 60px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+  
+  .text h3{
+    margin-top:20px;
+    color: #6C63FF;
+    margin-right: 15%;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  
+  .text p{
+    font-size: 20px;
+    margin-right: 10%;
+  }
+
+  .buttons-container{
+    display: flex;
+    padding-left: 3vh;
+    margin-top: 30px;
+
+  }
+  
+  .button-notes , .button-restaurant {
+    padding: 13px 25px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-size: 15px;
+    background-color: #7c7c7c;
+  }
+
+  .text .restaurant{
+    font-size: 40px;
+  }
+
+  .container{
+    display: block; 
+
+  }
+
+  .card {
+    background: #404040;
+    width: 300px;
+    height: 170px;
+    margin-left: 20px;
+    margin-right: 115px;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-left: 18px;
+    padding-right: 15px;
+    border-radius: 8px;
+  }
+  
+  .card h1{
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .card p{
+    font-size: 15px;
+  }
+
+  .logo {
+    margin-left: 5vh;
+    width: 250px;
+    height: 250px;
+  }
+
+  .searchBar{
+    margin-left: 20vw;
+  }
+
+  .dropdown {
+    color: grey;
+    background: #404040;
+    font-size: 17px;
+    font-weight: 400;
+    border: 0;
+    width: 186px;
+    height: 45px;
+    margin-left: 3vh;
+    margin-right: 63px;
+    border-radius: 7px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .searchDrop{
+   width: 220px;
+   margin-left: 0;
+  }
+
+  .search {
+    width: 130px;
+    height: 44px;
+    background: #6C63FF;
+    border: 0;
+    margin-left: 7vh;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 7px;
+  }
+  
 }
