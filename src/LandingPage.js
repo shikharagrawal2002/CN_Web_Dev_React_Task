@@ -4,7 +4,7 @@ const LandingPage = () => {
       <div className="content">
         <div className="image">
           <img
-            src="https://www.marsmedia.nl/wp-content/uploads/2020/10/undraw_quite_town_mg2q-1.svg"
+            src="https://www.pickit.com/hubfs/undraw_quite_town_mg2q_purple.svg"
             alt="No"
             className="responsiveImage"
           />
